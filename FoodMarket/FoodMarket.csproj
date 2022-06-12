@@ -46,16 +46,61 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\AddingBasketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddingBasketForm.Designer.cs">
+      <DependentUpon>AddingBasketForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\CatalogForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\CatalogForm.Designer.cs">
       <DependentUpon>CatalogForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\DesertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DesertForm.Designer.cs">
+      <DependentUpon>DesertForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DrinkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DrinkForm.Designer.cs">
+      <DependentUpon>DrinkForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FructForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FructForm.Designer.cs">
+      <DependentUpon>FructForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VegetableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VegetableForm.Designer.cs">
+      <DependentUpon>VegetableForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Scripts\Programm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AddingBasketForm.resx">
+      <DependentUpon>AddingBasketForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CatalogForm.resx">
       <DependentUpon>CatalogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DesertForm.resx">
+      <DependentUpon>DesertForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DrinkForm.resx">
+      <DependentUpon>DrinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FructForm.resx">
+      <DependentUpon>FructForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\VegetableForm.resx">
+      <DependentUpon>VegetableForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

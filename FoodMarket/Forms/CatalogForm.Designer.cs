@@ -28,20 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.CatalogGrid = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.Catalog = new System.Windows.Forms.DataGridViewButtonColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.CatalogGrid)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // CatalogGrid
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 139);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(804, 311);
-            this.dataGridView1.TabIndex = 0;
+            this.CatalogGrid.AllowUserToAddRows = false;
+            this.CatalogGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.CatalogGrid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.CatalogGrid.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.CatalogGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CatalogGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Catalog});
+            this.CatalogGrid.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.CatalogGrid.Location = new System.Drawing.Point(0, 301);
+            this.CatalogGrid.Name = "CatalogGrid";
+            this.CatalogGrid.RowHeadersVisible = false;
+            this.CatalogGrid.RowHeadersWidth = 51;
+            this.CatalogGrid.Size = new System.Drawing.Size(800, 149);
+            this.CatalogGrid.TabIndex = 0;
+            this.CatalogGrid.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.CatalogGrid_CellMouseClick);
             // 
             // button1
             // 
@@ -61,26 +71,35 @@
             this.button2.Text = "Корзина";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // Catalog
+            // 
+            this.Catalog.HeaderText = "Каталог";
+            this.Catalog.MinimumWidth = 6;
+            this.Catalog.Name = "Catalog";
+            this.Catalog.ReadOnly = true;
+            // 
+            // CatalogForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Controls.Add(this.CatalogGrid);
+            this.Name = "CatalogForm";
+            this.Text = "FoodMarket";
+            this.Load += new System.EventHandler(this.CatalogForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.CatalogGrid)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView CatalogGrid;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridViewButtonColumn Catalog;
     }
 }
 

@@ -59,7 +59,7 @@
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "Ціна";
+            this.Column2.HeaderText = "Ціна за 0,5 л";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
@@ -72,6 +72,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "DrinkForm";
             this.Text = "FoodMarket";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DrinkForm_FormClosing);
             this.Load += new System.EventHandler(this.DrinkForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

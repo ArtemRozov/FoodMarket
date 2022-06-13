@@ -72,6 +72,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "DesertForm";
             this.Text = "FoodMarket";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DesertForm_FormClosing);
             this.Load += new System.EventHandler(this.DesertForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.CatalogGrid = new System.Windows.Forms.DataGridView();
+            this.Catalog = new System.Windows.Forms.DataGridViewButtonColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.Catalog = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.CatalogGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,6 +53,13 @@
             this.CatalogGrid.TabIndex = 0;
             this.CatalogGrid.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.CatalogGrid_CellMouseClick);
             // 
+            // Catalog
+            // 
+            this.Catalog.HeaderText = "Каталог";
+            this.Catalog.MinimumWidth = 6;
+            this.Catalog.Name = "Catalog";
+            this.Catalog.ReadOnly = true;
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(551, 12);
@@ -61,6 +68,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Кабінет";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
             // 
             // button2
             // 
@@ -70,13 +78,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Корзина";
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // Catalog
-            // 
-            this.Catalog.HeaderText = "Каталог";
-            this.Catalog.MinimumWidth = 6;
-            this.Catalog.Name = "Catalog";
-            this.Catalog.ReadOnly = true;
+            this.button2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button2_MouseClick);
             // 
             // CatalogForm
             // 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FoodMarket.Scripts;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,53 +32,55 @@ namespace FoodMarket.Forms
 
         private void dataGridView1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
+            Hide();
             if (e.RowIndex == 0)
             {
-                AddingBasketForm addingBasketForm = new AddingBasketForm();
-                addingBasketForm.Show();
+                AddingBasketForm.Src = new LocalBush("Капуста", 27);
             }
 
             if (e.RowIndex == 1)
             {
-                AddingBasketForm addingBasketForm = new AddingBasketForm();
-                addingBasketForm.Show();
+                AddingBasketForm.Src = new LocalBush("Баклажан", 90);
             }
 
             if (e.RowIndex == 2)
             {
-                AddingBasketForm addingBasketForm = new AddingBasketForm();
-                addingBasketForm.Show();
+                AddingBasketForm.Src = new LocalBush("Буряк", 25);
             }
 
             if (e.RowIndex == 3)
             {
-                AddingBasketForm addingBasketForm = new AddingBasketForm();
-                addingBasketForm.Show();
+                AddingBasketForm.Src = new LocalBush("Кабачки", 55);
             }
 
             if (e.RowIndex == 4)
             {
-                AddingBasketForm addingBasketForm = new AddingBasketForm();
-                addingBasketForm.Show();
+                AddingBasketForm.Src = new LocalBush("Картопля", 16);
             }
 
             if (e.RowIndex == 5)
             {
-                AddingBasketForm addingBasketForm = new AddingBasketForm();
-                addingBasketForm.Show();
+                AddingBasketForm.Src = new LocalBush("Помідор", 50);
             }
 
             if (e.RowIndex == 6)
             {
-                AddingBasketForm addingBasketForm = new AddingBasketForm();
-                addingBasketForm.Show();
+                AddingBasketForm.Src = new LocalBush("Огірок", 34);
             }
 
             if (e.RowIndex == 7)
             {
-                AddingBasketForm addingBasketForm = new AddingBasketForm();
-                addingBasketForm.Show();
+                AddingBasketForm.Src = new LocalBush("Броколі", 60);
             }
+
+            AddingBasketForm addingBasketForm = new AddingBasketForm();
+            addingBasketForm.Show();
+        }
+
+        private void VegetableForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            CatalogForm catalogForm = new CatalogForm();
+            catalogForm.Show();
         }
     }
 }

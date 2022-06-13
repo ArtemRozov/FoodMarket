@@ -1,6 +1,6 @@
 ﻿namespace FoodMarket.Forms
 {
-    partial class VegetableForm
+    partial class CabinetForm
     {
         /// <summary>
         /// Required designer variable.
@@ -42,38 +42,38 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
-            this.dataGridView1.Location = new System.Drawing.Point(1, 3);
+            this.dataGridView1.Location = new System.Drawing.Point(1, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(802, 447);
+            this.dataGridView1.Size = new System.Drawing.Size(799, 448);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick);
             // 
             // Column1
             // 
-            this.Column1.HeaderText = "Товар";
+            this.Column1.HeaderText = "Номер покупки";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "Ціна за кілограм";
+            this.Column2.HeaderText = "Ціна";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
-            // VegetableForm
+            // CabinetForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "VegetableForm";
-            this.Text = "FoodMarket";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.VegetableForm_FormClosing);
-            this.Load += new System.EventHandler(this.VegetableForm_Load);
+            this.Name = "CabinetForm";
+            this.Text = "CabinetForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CabinetForm_FormClosing);
+            this.Load += new System.EventHandler(this.CabinetForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

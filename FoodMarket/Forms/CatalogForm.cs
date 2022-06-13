@@ -52,6 +52,21 @@ namespace FoodMarket
                 DrinkForm drinkForm = new DrinkForm();
                 drinkForm.Show();
             }
+            Hide();
+        }
+
+        private void button2_MouseClick(object sender, MouseEventArgs e)
+        {
+            BasketForm basketForm = new BasketForm();
+            basketForm.Show();
+            Hide();
+        }
+
+        private void button1_MouseClick(object sender, MouseEventArgs e)
+        {
+            CabinetForm cabinetForm = new CabinetForm();
+            cabinetForm.Show();
+            Hide();
         }
     }
 }

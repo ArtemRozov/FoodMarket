@@ -52,6 +52,24 @@
     <Compile Include="Forms\AddingBasketForm.Designer.cs">
       <DependentUpon>AddingBasketForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\BasketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BasketForm.Designer.cs">
+      <DependentUpon>BasketForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CabinetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CabinetForm.Designer.cs">
+      <DependentUpon>CabinetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CabinetInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CabinetInfo.Designer.cs">
+      <DependentUpon>CabinetInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\CatalogForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,10 +100,20 @@
     <Compile Include="Forms\VegetableForm.Designer.cs">
       <DependentUpon>VegetableForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Scripts\LocalBush.cs" />
     <Compile Include="Scripts\Programm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\AddingBasketForm.resx">
       <DependentUpon>AddingBasketForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BasketForm.resx">
+      <DependentUpon>BasketForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CabinetForm.resx">
+      <DependentUpon>CabinetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CabinetInfo.resx">
+      <DependentUpon>CabinetInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CatalogForm.resx">
       <DependentUpon>CatalogForm.cs</DependentUpon>
